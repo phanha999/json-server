@@ -1,0 +1,25 @@
+{
+  "name": "udemy-backend",
+  "version": "1.0.0",
+  "description": "demo how to run json-server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js",
+    "start": "node generate-data.js && node main.js",
+    "generate-data ": "node generate-data.js"
+  },
+  "keywords": [
+    "json-server"
+  ],
+  "author": "Freya",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "query-string": "^7.0.0"
+  },
+  "devDependencies": {
+    "faker": "^5.5.2",
+    "nodemon": "^2.0.7"
+  }
+}

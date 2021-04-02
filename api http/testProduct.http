@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:3000/api
+
+#products
+
+# @name getAllproducts
+GET {{ baseUrl }}/products
+
+###
+
+# @name filterProduct
+GET {{ baseUrl }}/products?_page=1&_limit=20
+
+###
+
+# @name addNewproducts
+POST {{ baseUrl }}/products
+content-type: application/json
+
+{
+    "name": "Refined Cotton Keyboard",
+    "color": "green",
+    "price": 23090,
+    "descriptors": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+    "thumbnailUrl": "http://placeimg.com/400/400"
+}
+
+###
+
+# @name updateproducts
+PATCH {{ baseUrl }}/products/ashJ_in
+content-type: application/json
+
+{
+    "name": "Refined Cotton Keyboard",
+    "color": "black",
+    "price": 230
+}
+
+###
+
+# @name deleteproducts
+DELETE {{ baseUrl }}/products/2
